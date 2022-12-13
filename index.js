@@ -28,11 +28,12 @@ buttons.map( button => {
                 break;
                 // we use the default case to append the value to the display
             case '←':
-                // we use the slice method to remove the last character from the display
+                
                 if (display.innerText){
+                    // this method does not alter the original array, but returns a new array. for our case we are removing the last character from the display
                    display.innerText = display.innerText.slice(0, -1);
                 }
-                 
+                 /
                 break;
                 // we use the default case to append the value to the display
             default:
